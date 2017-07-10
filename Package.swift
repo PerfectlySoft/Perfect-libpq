@@ -24,6 +24,6 @@ let package = Package(
 	pkgConfig: "libpq",
 	providers: [
 	           	.Brew("postgres"),
-	           	.Apt("pq"),
+	           	.Apt("libpq-dev"),
 	]
 )
