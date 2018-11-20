@@ -1,3 +1,4 @@
+// swift-tools-version:4.0
 //
 //  Package.swift
 //  Perfect-libpq
@@ -23,7 +24,7 @@ let package = Package(
 	name: "libpq",
 	pkgConfig: "libpq",
 	providers: [
-	           	.Brew("postgres"),
-	           	.Apt("libpq-dev"),
+	           	.brew(["postgres"]),
+	           	.apt(["libpq-dev"]),
 	]
 )
